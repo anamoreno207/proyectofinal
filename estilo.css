@@ -1,0 +1,123 @@
+header {
+font-family: arial;
+background:#5b7989;
+color: white;
+text-shadow: 2px 2px #02010a;
+border-radius: 10px;
+display: flex;
+justify-content: space-between;
+font-family: 'Dancing Script', cursive;
+margin-bottom: 0%}
+
+body{background-color: black;}
+
+ul nav{
+color: white;
+align-items:baseline;
+font-size: 20px}
+a:link {color: white;
+text-decoration: none;}
+a:visited {color: white}
+
+@keyframes slidein {
+0% {margin-top : 150% ;}
+60% {margin-top: -5% ;}
+100% {margin-top : 0% ;}}
+
+@font-face {
+font-family: "Dancing Script";
+src: url("https://fonts.google.com/specimen/Dancing+Script") format("truetype");}
+
+.contenedor{
+box-shadow: 2px 2px #02010a;
+display: flex;
+flex-flow: column wrap;
+background-color:  #82c3a6;}
+
+.secundarias{
+  display: flex;
+  align-items: baseline;
+  background-color: #d5c75f;
+  border: 1px;}
+
+figcaption{
+  font-family: 'Dancing Script', cursive;
+  text-decoration: underline;
+  font-size: 40px;
+text-align: center;}
+
+#imagen1 {
+    width:100%;
+    height:100%;
+    align-content: center;}}
+
+#imagen2{
+  width:100%;
+  height:100%;
+  text-shadow: #82c3a6 ;
+  border: 2px;
+  position: fixed;
+  left: 0px;
+  margin-bottom: 200px;}
+
+#imagen2 img{
+ transition-duration: 0.5s;
+ transition-property: rotate;}
+
+#imagen2 img:hover{
+transform: rotate(10deg);}
+
+#imagen3 {
+   width:100%;
+   height:100%;
+   text-shadow: #82c3a6;
+   border: 2px;}
+
+#imagen3 img{
+transition-duration: 60s;
+transition-property: translate;}
+
+#imagen3 img:hover{
+transform: translate(5px)}
+
+footer{
+font-family: 'Dancing Script', cursive;
+width: 100%;
+max-width: 1366px;
+min-width: 220px;
+background: #c6d5c5;
+display:flex;
+flex-direction:row;
+justify-content:space-around;
+}
+
+@media screen and (min-width:900px){
+header {width: 100%;}
+
+.contenedor{
+width: 100%}
+
+.contenedor img {
+width: 70%;}
+
+.Cajafooter {width: 100%;}}
+
+@media screen and (max-width: 899px){
+header {width: 100%;
+  display: flex;
+  flex-direction: column;}
+
+.contenedor{display: flex;
+flex-direction: column;
+  width: 100%;}
+
+.contenedor img{
+width: 70%;
+}
+.secundarias{display: flex;
+flex-direction: column;}
+
+footer {display: flex;
+flex-direction: column;
+width: 100%;}
+}
